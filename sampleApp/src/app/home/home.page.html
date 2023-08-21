@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Workmanager</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+	<div id="timer-container">
+  		Timer: <span id="timer">00:00:00</span>
+ 	</div>
+   	<ion-button (click)="startWork()">Run Background Task</ion-button><br>
+	<ion-button (click)="displayStatus()">Status</ion-button>
+	<ion-button (click)="getFileCount()">File Count</ion-button><br>
+	<ion-button (click)="stopWork()">Stop Background Task</ion-button>
+	
+	<div id="file-count">
+  		File count: <span id="count">0</span>
+ 	</div>
+  </div>
+
+</ion-content>
